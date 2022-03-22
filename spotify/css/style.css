@@ -1,0 +1,51 @@
+/* MAIN */
+
+/* UPGRADE SECITION */
+
+.upgrade-section {
+  height: 70px;
+  justify-content: end;
+  background-color: rgba(7, 11, 18, 0.7);
+}
+
+.upgrade-section > button {
+  margin: 15px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 0.7rem;
+}
+
+/* /UPGRADE SECITION */
+
+/* MAIN SECTION */
+
+nav {
+  margin-top: 10px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 6px;
+}
+
+/* RECENTLY PLAYED */
+
+.recent-play h2 {
+  margin-bottom: 20px;
+}
+
+.disc-cards {
+  flex-wrap: wrap;
+  padding: 0 10px 0 10px;
+}
+.disc-img {
+  width: 200px;
+  height:200px;
+}
+/* /RECENTLY PLAYED */
+
+/* /MAIN SECTION */
+/* /MAIN */

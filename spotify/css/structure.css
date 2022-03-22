@@ -1,0 +1,46 @@
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.space-evenly {
+  justify-content: start;
+}
+/* DEBUG */
+.debug {
+  background-color: rgba(255, 0, 0, 0.5);
+  border: 1px solid black;
+}
+
+.h100 {
+  height: 100px;
+}
+
+.h-calc {
+  height: calc(100vh - 100px);
+}
+
+.w250 {
+  width: 250px;
+}
+
+.w-calc {
+  width: calc(100% - 250px);
+}
+
+.w-perc{
+  width: 100%;
+}
+
+.p-borders {
+  padding: 20px;
+}
