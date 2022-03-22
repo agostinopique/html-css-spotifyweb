@@ -7,10 +7,11 @@
   <meta name="description" content="Spotify-webapp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./spotify/css/general.css">
   <link rel="stylesheet" href="./spotify/css/structure.css">
   <link rel="stylesheet" href="./spotify/css/style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.css' integrity='sha512-M9yHeAbo9J8KSZVvOi5PEo4WrL6LWxbS+cvh6faIEPPqHQXhxilgCSJ/L2tTqRf73GmI4+tNy8OWSsQuwXc4fw==' crossorigin='anonymous'/>
 
   <title>Spotify web</title>
 </head>
@@ -21,89 +22,148 @@
 
     <!-- ASIDE COLUMN -->
     <div class="aside-column w250 h-calc">
-      
+
+      <!-- ASIDE-LOGO -->
+      <div class="side-logo h70">
+        <img src="./spotify/img/logo.svg" alt="spotify-logo">
+      </div>
+      <!-- /ASIDE-LOGO -->
+
+      <div class="side-nav w-perc">
+
+        <!-- TOP-MENU -->
+        <ul class="nav-icons">
+          <li>
+            <a href="#">
+              <img src="./spotify/img/home.svg" alt="#">
+              Home</a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./spotify/img/search.svg" alt="#">
+              Cerca</a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./spotify/img/libreria.svg" alt="">
+              La tua libreria</a>
+          </li>
+        </ul>
+        <!-- /TOP-MENU -->
+        
+      </div>
+      <div class="playlist-section">
+        <h4>PLAYLIST</h4>
+        <a href="#" class="crea-playlist flex">
+          <span class="flex center debug">
+          <i class="fa-solid fa-xmark fa-2x"></i>
+          </span>
+          <p>Crea Playlist</p>
+        </a>
+
+        <ul class="play-list">
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="#" class="install flex">
+          <i class="fa-regular fa-circle-down"></i>
+          <p>Install app</p>
+        </a>
+      </div>
     </div>
     <!-- /ASIDE COLUMN -->
 
 
     <!-- CENTRAL SECTION -->
-    <div class="central-section debug w-calc h-calc">
-      <div class="debug w-perc upgrade-section flex">
+    <div class="central-section w-calc h-calc">
+      <div class="w-perc upgrade-section flex">
         <button>EFFETTUA L'UPGRADE</button>
       </div>
-      <nav class="flex center">
-        <ul>
-          <li><a href="#">titolo link</a></li>
-          <li><a href="#">titolo link</a></li>
-          <li><a href="#">titolo link</a></li>
-          <li><a href="#">titolo link</a></li>
-          <li><a href="#">titolo link</a></li>
-          <li><a href="#">titolo link</a></li>
-        </ul>
-      </nav>
 
-      <!-- RECENTLY PLAYED SECTION -->
-      <div class="recent-play p-borders">
-        <h2>Recently played</h2>
-
-        <!-- DISC SECTION -->
-        <div class="disc-cards flex space-evenly">
-
-          <div class="disc card-width">
-            <div class="debug disc-img">
+      <div class="main-content">
+        <nav class="flex center">
+          <ul>
+            <li><a href="#">titolo link</a></li>
+            <li><a href="#">titolo link</a></li>
+            <li><a href="#">titolo link</a></li>
+            <li><a href="#">titolo link</a></li>
+            <li><a href="#">titolo link</a></li>
+            <li><a href="#">titolo link</a></li>
+          </ul>
+        </nav>
+  
+        <!-- RECENTLY PLAYED SECTION -->
+        <div class="recent-play p-borders">
+          <h2>Recently played</h2>
+  
+          <!-- DISC SECTION -->
+          <div class="disc-cards flex space-evenly">
+  
+            <div class="disc card-width">
+              <div class="debug disc-img">
+              </div>
+              <div class="disc-txt">
+                <h5>Heavy Metal</h5>
+                <p>Subtitle</p>
+              </div>
             </div>
-            <div class="disc-txt">
-              <h5>Heavy Metal</h5>
-              <p>Subtitle</p>
+            <div class="disc card-width">
+              <div class="debug disc-img">
+              </div>
+              <div class="disc-txt">
+                <h5>Heavy Metal</h5>
+                <p>Subtitle</p>
+              </div>
+            </div>
+            <div class="disc card-width">
+              <div class="debug disc-img">
+              </div>
+              <div class="disc-txt">
+                <h5>Heavy Metal</h5>
+                <p>Subtitle</p>
+              </div>
+            </div>
+            <div class="disc card-width">
+              <div class="debug disc-img">
+              </div>
+              <div class="disc-txt">
+                <h5>Heavy Metal</h5>
+                <p>Subtitle</p>
+              </div>
+            </div>
+            <div class="disc card-width">
+              <div class="debug disc-img">
+              </div>
+              <div class="disc-txt">
+                <h5>Heavy Metal</h5>
+                <p>Subtitle</p>
+              </div>
+            </div>
+            <div class="disc card-width">
+              <div class="debug disc-img">
+              </div>
+              <div class="disc-txt">
+                <h5>Heavy Metal</h5>
+                <p>Subtitle</p>
+              </div>
             </div>
           </div>
-          <div class="disc card-width">
-            <div class="debug disc-img">
-            </div>
-            <div class="disc-txt">
-              <h5>Heavy Metal</h5>
-              <p>Subtitle</p>
-            </div>
-          </div>
-          <div class="disc card-width">
-            <div class="debug disc-img">
-            </div>
-            <div class="disc-txt">
-              <h5>Heavy Metal</h5>
-              <p>Subtitle</p>
-            </div>
-          </div>
-          <div class="disc card-width">
-            <div class="debug disc-img">
-            </div>
-            <div class="disc-txt">
-              <h5>Heavy Metal</h5>
-              <p>Subtitle</p>
-            </div>
-          </div>
-          <div class="disc card-width">
-            <div class="debug disc-img">
-            </div>
-            <div class="disc-txt">
-              <h5>Heavy Metal</h5>
-              <p>Subtitle</p>
-            </div>
-          </div>
-          <div class="disc card-width">
-            <div class="debug disc-img">
-            </div>
-            <div class="disc-txt">
-              <h5>Heavy Metal</h5>
-              <p>Subtitle</p>
-            </div>
-          </div>
+          <!-- /DISC SECTION -->
+  
         </div>
-        <!-- /DISC SECTION -->
-
+        <!-- /RECENTLY PLAYED SECTION -->
+  
+  
       </div>
-      <!-- /RECENTLY PLAYED SECTION -->
-
-
     </div>
     <!-- /CENTRAL SECTION -->
 

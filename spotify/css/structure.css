@@ -8,8 +8,16 @@
   align-items: center;
 }
 
+.baseline {
+  justify-content: baseline;
+}
+
 .column {
   flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 .space-evenly {
@@ -21,6 +29,9 @@
   border: 1px solid black;
 }
 
+.h70 {
+  height: 70px;
+}
 .h100 {
   height: 100px;
 }

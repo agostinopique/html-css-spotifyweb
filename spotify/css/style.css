@@ -25,8 +25,89 @@
 /* ASIDE NAVIGATOR */
 .aside-column {
   background-color: black;
+  padding: 10px;
+}
+
+.side-logo img{
+  width: 75%;
+}
+
+.nav-icons img {
+  width: 15%;
+  color: #727272;
+  vertical-align: middle;
+}
+
+.nav-icons li {
+  margin-bottom: 10px;
+}
+.nav-icons a {
+  color: #C1C1C1;
+}
+
+.nav-icons a:first-child {
+  color: #D3D3D3;
+}
+
+.side-nav {
+  margin-bottom: 20px;
+}
+
+.playlist-section h4 {
+  color: white;
+  margin-bottom: 15px; 
+}
+
+.crea-playlist {
+  align-items: center;
+  color: #767676;
+  margin-bottom: 20px; 
+}
+
+.crea-playlist span {
+  width: 40px;
+  height: 40px;
+  background-color: #A3A3A3;
+}
+
+.crea-playlist i {
+  transform: rotate(45deg);
+  color: black;
+}
+
+.crea-playlist p,
+.install p{
+  margin-left: 10px;
+}
+
+.play-list {
+  overflow: auto;
+  height: 500px;
+}
+
+.play-list li {
+  margin-bottom: 25px;
+}
+
+.play-list li a,
+.install {
+  color: #A3A3A3;
+}
+
+.install {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #717171;
 }
 /* /ASIDE NAVIGATOR */
+
+.central-section {
+  background-color: #141922;
+  color: white;
+}
+
+.main-content {
+  /* padding-top: 70px; */
+}
 
 nav {
   margin-top: 10px;
