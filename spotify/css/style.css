@@ -22,6 +22,12 @@
 
 /* MAIN SECTION */
 
+/* ASIDE NAVIGATOR */
+.aside-column {
+  background-color: black;
+}
+/* /ASIDE NAVIGATOR */
+
 nav {
   margin-top: 10px;
 }
