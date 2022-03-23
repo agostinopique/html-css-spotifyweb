@@ -6,6 +6,9 @@
   height: 70px;
   justify-content: end;
   background-color: rgba(7, 11, 18, 0.7);
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 .upgrade-section > button {
@@ -26,6 +29,14 @@
 .aside-column {
   background-color: black;
   padding: 10px;
+}
+
+#nav-top {
+  height: calc(100% - 70px);
+}
+
+#nav-bottom {
+  height: 70px;
 }
 
 .side-logo img{
@@ -98,16 +109,31 @@
   padding-bottom: 8px;
   border-bottom: 1px solid #717171;
 }
+
+.profile span {
+  width: 35px;
+  height: 35px;
+  background-color: #808080;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.profile span img {
+  width: 70%;
+}
+
+.profile h3 {
+  margin: 15px 0 0 10px;
+  color: white;
+}
 /* /ASIDE NAVIGATOR */
 
 .central-section {
   background-color: #141922;
   color: white;
+  padding-top: 70px;
 }
 
-.main-content {
-  /* padding-top: 70px; */
-}
 
 nav {
   margin-top: 10px;
@@ -126,11 +152,34 @@ nav li {
 
 .disc-cards {
   flex-wrap: wrap;
-  padding: 0 10px 0 10px;
+  justify-content: start;
+  align-items: baseline;
 }
+
+.disc {
+  max-width: 200px;
+  margin: 10px;
+  flex-shrink: 1;
+}
+
 .disc-img {
   width: 200px;
   height:200px;
+}
+
+.disc-img img {
+  width: 100%;
+}
+
+.disc-txt {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.disc-txt p {
+  margin-top: 8px;
+  font-size: .8rem;
+  color: #7D7E84;
 }
 /* /RECENTLY PLAYED */
 

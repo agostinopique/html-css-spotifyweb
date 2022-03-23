@@ -8,21 +8,10 @@
   align-items: center;
 }
 
-.baseline {
-  justify-content: baseline;
-}
-
 .column {
   flex-direction: column;
 }
 
-.space-between {
-  justify-content: space-between;
-}
-
-.space-evenly {
-  justify-content: start;
-}
 /* DEBUG */
 .debug {
   background-color: rgba(255, 0, 0, 0.5);

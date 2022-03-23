@@ -21,62 +21,72 @@
   <main class="h-calc flex">
 
     <!-- ASIDE COLUMN -->
-    <div class="aside-column w250 h-calc">
+    <div class="aside-column w250">
 
-      <!-- ASIDE-LOGO -->
-      <div class="side-logo h70">
-        <img src="./spotify/img/logo.svg" alt="spotify-logo">
+      <div id="nav-top">
+        <!-- ASIDE-LOGO -->
+        <div class="side-logo h70">
+          <img src="./spotify/img/logo.svg" alt="spotify-logo">
+        </div>
+        <!-- /ASIDE-LOGO -->
+
+        <div class="side-nav w-perc">
+
+          <!-- TOP-MENU -->
+          <ul class="nav-icons">
+            <li>
+              <a href="#">
+                <img src="./spotify/img/home.svg" alt="#">
+                Home</a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="./spotify/img/search.svg" alt="#">
+                Cerca</a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="./spotify/img/libreria.svg" alt="">
+                La tua libreria</a>
+            </li>
+          </ul>
+          <!-- /TOP-MENU -->
+          
+        </div>
+        <div class="playlist-section">
+          <h4>PLAYLIST</h4>
+          <a href="#" class="crea-playlist flex">
+            <span class="flex center debug">
+            <i class="fa-solid fa-xmark fa-2x"></i>
+            </span>
+            <p>Crea Playlist</p>
+          </a>
+
+          <ul class="play-list">
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+          </ul>
+        </div>
       </div>
-      <!-- /ASIDE-LOGO -->
-
-      <div class="side-nav w-perc">
-
-        <!-- TOP-MENU -->
-        <ul class="nav-icons">
-          <li>
-            <a href="#">
-              <img src="./spotify/img/home.svg" alt="#">
-              Home</a>
-          </li>
-
-          <li>
-            <a href="#">
-              <img src="./spotify/img/search.svg" alt="#">
-              Cerca</a>
-          </li>
-
-          <li>
-            <a href="#">
-              <img src="./spotify/img/libreria.svg" alt="">
-              La tua libreria</a>
-          </li>
-        </ul>
-        <!-- /TOP-MENU -->
-        
-      </div>
-      <div class="playlist-section">
-        <h4>PLAYLIST</h4>
-        <a href="#" class="crea-playlist flex">
-          <span class="flex center debug">
-          <i class="fa-solid fa-xmark fa-2x"></i>
-          </span>
-          <p>Crea Playlist</p>
-        </a>
-
-        <ul class="play-list">
-          <li><a href="#">Nome Playlist</a></li>
-          <li><a href="#">Nome Playlist</a></li>
-          <li><a href="#">Nome Playlist</a></li>
-          <li><a href="#">Nome Playlist</a></li>
-          <li><a href="#">Nome Playlist</a></li>
-          <li><a href="#">Nome Playlist</a></li>
-          <li><a href="#">Nome Playlist</a></li>
-        </ul>
-      </div>
-      <div>
+      <div id="nav-bottom">
         <a href="#" class="install flex">
           <i class="fa-regular fa-circle-down"></i>
           <p>Install app</p>
+        </a>
+
+        <a href="#" class="profile flex baseline">
+
+          <span class="flex center">
+            <img src="./spotify/img/profile.svg" alt="profile">
+          </span>
+          <h3>John Doe</h3>
         </a>
       </div>
     </div>
@@ -92,12 +102,12 @@
       <div class="main-content">
         <nav class="flex center">
           <ul>
-            <li><a href="#">titolo link</a></li>
-            <li><a href="#">titolo link</a></li>
-            <li><a href="#">titolo link</a></li>
-            <li><a href="#">titolo link</a></li>
-            <li><a href="#">titolo link</a></li>
-            <li><a href="#">titolo link</a></li>
+            <li><a href="#">IN EVIDENZA</a></li>
+            <li><a href="#">PODCAST</a></li>
+            <li><a href="#">CLASSIFICHE</a></li>
+            <li><a href="#">GENERI E MOOD</a></li>
+            <li><a href="#">NUOVE USCITE</a></li>
+            <li><a href="#">SCOPRI</a></li>
           </ul>
         </nav>
   
@@ -106,53 +116,66 @@
           <h2>Recently played</h2>
   
           <!-- DISC SECTION -->
-          <div class="disc-cards flex space-evenly">
+          <div class="disc-cards flex">
   
-            <div class="disc card-width">
+            <div class="disc flex column center card-width">
               <div class="debug disc-img">
+                <img src="./spotify/img/metal_lifting.jpg" alt="metal album">
               </div>
               <div class="disc-txt">
-                <h5>Heavy Metal</h5>
+                <h4>Heavy Metal</h4>
                 <p>Subtitle</p>
               </div>
             </div>
-            <div class="disc card-width">
+
+
+            <div class="disc flex column center card-width">
               <div class="debug disc-img">
+                <img src="./spotify/img/stranger.jpeg" alt="stranger Things album">
               </div>
               <div class="disc-txt">
-                <h5>Heavy Metal</h5>
+                <h4>Stranger Things, Vol. 1 (a Netflix Original Soundtrack)</h4>
+                <p>Kyle Dixon & Michael Stein</p>
+              </div>
+            </div>
+
+
+            <div class="disc flex column center card-width">
+              <div class="debug disc-img">
+                <img src="./spotify/img/aquietplace.jpeg" alt="a quiet place">
+              </div>
+              <div class="disc-txt">
+                <h4>A quiet place</h4>
                 <p>Subtitle</p>
               </div>
             </div>
-            <div class="disc card-width">
+
+            <div class="disc flex column center card-width">
               <div class="debug disc-img">
+                <img src="./spotify/img/split.jpeg" alt="Split">
               </div>
               <div class="disc-txt">
-                <h5>Heavy Metal</h5>
+                <h4>Split</h4>
                 <p>Subtitle</p>
               </div>
             </div>
-            <div class="disc card-width">
+
+            <div class="disc flex column center card-width">
               <div class="debug disc-img">
+                <img src="./spotify/img/cure.jpeg" alt="">
               </div>
               <div class="disc-txt">
-                <h5>Heavy Metal</h5>
+                <h4>A cure for wellness</h4>
                 <p>Subtitle</p>
               </div>
             </div>
-            <div class="disc card-width">
+
+            <div class="disc flex column center card-width">
               <div class="debug disc-img">
+                <img src="./spotify/img/sinister.jpeg" alt="">
               </div>
               <div class="disc-txt">
-                <h5>Heavy Metal</h5>
-                <p>Subtitle</p>
-              </div>
-            </div>
-            <div class="disc card-width">
-              <div class="debug disc-img">
-              </div>
-              <div class="disc-txt">
-                <h5>Heavy Metal</h5>
+                <h4>Sinister</h4>
                 <p>Subtitle</p>
               </div>
             </div>
