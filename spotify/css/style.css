@@ -9,6 +9,7 @@
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 998;
 }
 
 .upgrade-section > button {
@@ -29,6 +30,7 @@
 .aside-column {
   background-color: black;
   padding: 10px;
+  height: 100%;
 }
 
 #nav-top {
@@ -41,6 +43,8 @@
 
 .side-logo img{
   width: 75%;
+  color: white;
+  z-index: 999
 }
 
 .nav-icons img {
@@ -128,10 +132,13 @@
 }
 /* /ASIDE NAVIGATOR */
 
+/* MAIN CONTENT */
 .central-section {
   background-color: #141922;
   color: white;
   padding-top: 70px;
+  height: 100%;
+  overflow-y: auto;
 }
 
 
@@ -144,27 +151,24 @@ nav li {
   padding: 6px;
 }
 
-/* RECENTLY PLAYED */
-
 .recent-play h2 {
   margin-bottom: 20px;
 }
 
 .disc-cards {
-  flex-wrap: wrap;
   justify-content: start;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .disc {
-  max-width: 200px;
-  margin: 10px;
-  flex-shrink: 1;
+  width: calc((100% - 120px) / 6);
+  margin: 10px 20px 0 0;
+  flex-shrink: 0;
 }
 
-.disc-img {
-  width: 200px;
-  height:200px;
+.round.disc-img img{
+  border-radius: 50%;
 }
 
 .disc-img img {
@@ -176,12 +180,80 @@ nav li {
   margin-top: 10px;
 }
 
-.disc-txt p {
-  margin-top: 8px;
+.disc-txt p,
+.created-for-jd p,
+.popular-artists p {
+  margin: 8px 0 10px 0;
   font-size: .8rem;
   color: #7D7E84;
 }
-/* /RECENTLY PLAYED */
+/* /MAIN CONTENT */
 
 /* /MAIN SECTION */
+
 /* /MAIN */
+
+/* FOOTER */
+
+#player {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-album {
+  padding-left: 10px;
+  width: 25%;
+  
+}
+
+.album {
+  align-items: center;
+}
+.album-img {
+  width: 15%;
+}
+
+.album-txt {
+  padding-left: 10px;
+}
+.album-txt p {
+  font-size: .8rem;
+  color: #7D7E84
+}
+
+.album-img img {
+  width: 100%;
+}
+
+.album-icons {
+  align-items: center;
+  padding-right: 40px;
+}
+
+.album-icons i {
+  padding-left: 15px;
+  color: #828282;
+  font-size: 1.3rem;
+}
+
+.player-controller {
+  width: 40%;
+}
+
+.player-controller i {
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.player-btn .fa-circle-play{
+  font-size: 2.3rem;
+  margin: 0 10px;
+}
+
+
+.player-volume {
+  width: 230px;
+}
+
+/* /FOOTER */
