@@ -34,22 +34,24 @@
 /* ASIDE NAVIGATOR */
 .aside-column {
   background-color: black;
-  padding: 10px;
   height: 100%;
+  overflow-y: hidden;
 }
 
 #nav-top {
-  height: calc(100% - 70px);
+  height: calc(100% - 90px);
 }
 
 #nav-bottom {
-  height: 70px;
+  height: 90px;
+  padding: 10px;
 }
 
 .side-logo img{
   width: 75%;
   color: white;
-  z-index: 999
+  z-index: 999;
+  padding: 10px;
 }
 
 .nav-icons img {
@@ -60,15 +62,21 @@
 
 .nav-icons li {
   margin-bottom: 10px;
+  padding-left: 10px;
+  border-left: 2px solid rgba(0, 0, 0, 0);
 }
 
 
-.active {
+li.active{
   border-left: 2px solid #B6FF34;
-  padding-left: -10px;
 }
+
 .side-nav {
   margin-bottom: 20px;
+}
+
+.playlist-section {
+  padding-left: 12px;
 }
 
 .playlist-section h4 {
@@ -98,22 +106,25 @@
   margin-left: 10px;
 }
 
-.play-list {
+.playlist-section {
   overflow: auto;
 }
+
+.play-list {
+  /* flex-grow: 1; */
+  overflow-y: auto;
+  min-height: 50px;
+}
+/* TENTATIVO DI OVERFLOW */
 
 .play-list li {
   margin-bottom: 25px;
 }
-/* 
-.play-list li a,
-.install {
-  color: #A3A3A3;
-} */
 
 .install {
   padding-bottom: 8px;
   border-bottom: 1px solid #717171;
+  align-items: center;
 }
 
 .profile span {
@@ -221,18 +232,17 @@ nav li {
   opacity: 1;
 }
 
-.disc-img:hover {
+.disc-img:hover img{
   filter: brightness(0.5)
 }
 
 .overlay i {
   color: white;
-  font-size: 3rem;
+  font-size: 3vw;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 /* /OVERLAY */
@@ -252,20 +262,21 @@ nav li {
 
 .player-album {
   padding-left: 10px;
-  width: 25%;
-  
+  width: 300px;
 }
 
 .album {
   align-items: center;
 }
+
 .album-img {
-  width: 15%;
+  width: 70px;
 }
 
 .album-txt {
   padding-left: 10px;
 }
+
 .album-txt p {
   font-size: .8rem;
   color: #7D7E84
@@ -277,14 +288,14 @@ nav li {
 
 .album-icons {
   align-items: center;
-  padding-right: 40px;
+  padding-left: 30px;
 }
 
 .album-icons i {
   padding-left: 15px;
-  color: #828282;
   font-size: 1.3rem;
 }
+
 
 .player-controller {
   width: 40%;
@@ -299,6 +310,10 @@ nav li {
 .player-btn .fa-circle-play{
   font-size: 2.3rem;
   margin: 0 10px;
+}
+
+.player-btn .fa-circle-play:hover{
+  transform: scale(1.2);
 }
 
 .track-status {
@@ -334,8 +349,8 @@ nav li {
   padding-right: 15px;
 }
 
-.player-volume *{
-  padding-left: 30px;
+.player-volume a{
+  padding-right: 15px;
 }
 
 .volume {

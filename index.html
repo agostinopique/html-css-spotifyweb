@@ -21,7 +21,7 @@
   <main class="h-calc flex">
 
     <!-- ASIDE COLUMN -->
-    <div class="aside-column w250">
+    <div class="aside-column w250 flex column">
 
       <div id="nav-top">
         <!-- ASIDE-LOGO -->
@@ -88,6 +88,7 @@
         </a>
       </div>
     </div>
+    <!-- POSIZIONARE IL BORDO VERDE: Modifica il padding spostandolo dal contenitore ai singoli li in modo da poter poi aggiunggere il bordo alla fine della pagina. Inoltre, per risolvere un eventuale slittamento degli li causato dai pixel aggiunti dal bordo colorato, puoi dare a tutti gli li un bordo dello stesso spessore ma trasparente -->
     <!-- /ASIDE COLUMN -->
 
 
@@ -294,8 +295,12 @@
           </div>
         </div>
         <div class="album-icons flex">
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-regular fa-folder"></i>
+          <a href="#">
+            <i class="fa-regular fa-heart"></i>
+          </a>
+          <a href="#">
+            <i class="fa-regular fa-folder"></i>
+          </a>
         </div>
       </div>
       <!-- /LEFT-SIDE PLAYER -->
@@ -339,9 +344,16 @@
 
       <!-- LEFT-SIDE PLAYER -->
       <div class="player-volume flex center">
-        <i class="fa-solid fa-list"></i>
-        <i class="fa-solid fa-display"></i>
-        <i class="fa-solid fa-volume-high"></i>
+        <a href="#">
+          <i class="fa-solid fa-list"></i>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-display"></i>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-volume-high"></i>
+        </a>
+
         <div class="volume">
           <div class="volume-total"></div>
           <div class="volume-passed"></div>
