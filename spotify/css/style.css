@@ -13,13 +13,18 @@
 }
 
 .upgrade-section > button {
-  margin: 15px;
+  margin: 15px 30px;
   padding: 10px 20px;
   border-radius: 20px;
   border: 1px solid white;
   background-color: rgba(0, 0, 0, 0);
   color: white;
   font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.upgrade-section > button:hover {
+  transform: scale(1.1);
 }
 
 /* /UPGRADE SECITION */
@@ -56,14 +61,12 @@
 .nav-icons li {
   margin-bottom: 10px;
 }
-.nav-icons a {
-  color: #C1C1C1;
-}
 
-.nav-icons a:first-child {
-  color: #D3D3D3;
-}
 
+.active {
+  border-left: 2px solid #B6FF34;
+  padding-left: -10px;
+}
 .side-nav {
   margin-bottom: 20px;
 }
@@ -97,17 +100,16 @@
 
 .play-list {
   overflow: auto;
-  height: 500px;
 }
 
 .play-list li {
   margin-bottom: 25px;
 }
-
+/* 
 .play-list li a,
 .install {
   color: #A3A3A3;
-}
+} */
 
 .install {
   padding-bottom: 8px;
@@ -151,6 +153,14 @@ nav li {
   padding: 6px;
 }
 
+.active-bottom {
+  border: 1px solid #BDFF38;
+  width: 40%;
+  text-align: center;
+  position: relative;
+  left: 30%;
+}
+
 .recent-play h2 {
   margin-bottom: 20px;
 }
@@ -167,7 +177,8 @@ nav li {
   flex-shrink: 0;
 }
 
-.round.disc-img img{
+.round.disc-img img,
+.round.disc-img .overlay{
   border-radius: 50%;
 }
 
@@ -187,6 +198,45 @@ nav li {
   font-size: .8rem;
   color: #7D7E84;
 }
+
+/* OVERLAY */
+
+.disc-img {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+
+.disc-img:hover .overlay {
+  opacity: 1;
+}
+
+.disc-img:hover {
+  filter: brightness(0.5)
+}
+
+.overlay i {
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* /OVERLAY */
+
 /* /MAIN CONTENT */
 
 /* /MAIN SECTION */
@@ -251,9 +301,63 @@ nav li {
   margin: 0 10px;
 }
 
+.track-status {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.track-status {
+  font-size: 0.7rem
+}
+
+.timeframe {
+  width: 80%;
+}
+
+.timeframe-total {
+  width: 100%;
+  border: 2px solid #717171;
+  border-radius: 5px;
+}
+
+.timeframe-passed {
+  width: 30%;
+  border: 2px solid #C1C1C1;
+  border-radius: 5px;
+  position: relative;
+  bottom: 4px;
+}
 
 .player-volume {
-  width: 230px;
+  width: 300px;
+  padding-right: 15px;
+}
+
+.player-volume *{
+  padding-left: 30px;
+}
+
+.volume {
+  width: 60%;
+}
+
+.volume-total {
+  width: 100%;
+  border: 2px solid #717171;
+  border-radius: 5px;
+}
+
+.volume-passed {
+  width: 30%;
+  border: 2px solid #C1C1C1;
+  border-radius: 5px;
+  position: relative;
+  bottom: 4px;
 }
 
 /* /FOOTER */
+
+/* MEDIA QUERY */
+
+/* /MEDIA QUERY */

@@ -17,8 +17,11 @@ ul {
 
 a {
   text-decoration: none;
-  color: #7F8187;
+  color: #717171;
+}
 
+a:hover{
+  color: white;
 }
 
 .clearfix::after {
