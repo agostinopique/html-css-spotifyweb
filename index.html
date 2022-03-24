@@ -28,6 +28,9 @@
         <div class="side-logo h70">
           <img src="./spotify/img/logo.svg" alt="spotify-logo">
         </div>
+        <div class="alternative h70">
+          <img src="./spotify/img/logo-small.svg" alt="spotify-logo-small">
+        </div>
         <!-- /ASIDE-LOGO -->
 
         <div class="side-nav w-perc">
@@ -35,19 +38,24 @@
           <!-- TOP-MENU -->
           <ul class="nav-icons">
             <li class="active">
-              <img src="./spotify/img/home.svg" alt="#">
-              <a href="#">Home</a>
+              <a href="#">
+                <img src="./spotify/img/home.svg" alt="#">
+                <span>Home</span>
+              </a>
             </li>
 
             <li>
-              <img src="./spotify/img/search.svg" alt="#">
-              <a href="#">Cerca</a>
+              <a href="#">
+                <img src="./spotify/img/search.svg" alt="#">
+                <span>Cerca</span>
+              </a>
             </li>
 
             <li>
               <a href="#">
                 <img src="./spotify/img/libreria.svg" alt="">
-                La tua libreria</a>
+                <span>La tua libreria</span>  
+              </a>
             </li>
           </ul>
           <!-- /TOP-MENU -->
@@ -56,7 +64,7 @@
         <div class="playlist-section">
           <h4>PLAYLIST</h4>
           <a href="#" class="crea-playlist flex">
-            <span class="flex center debug">
+            <span class="flex center">
             <i class="fa-solid fa-xmark fa-2x"></i>
             </span>
             <p>Crea Playlist</p>
@@ -79,7 +87,7 @@
           <p>Install app</p>
         </a>
 
-        <a href="#" class="profile flex baseline">
+        <a href="#" class="profile flex">
 
           <span class="flex center">
             <img src="./spotify/img/profile.svg" alt="profile">
@@ -293,7 +301,7 @@
             <p>Brano nome</p>
           </div>
         </div>
-        <div class="album-icons flex">
+        <div class="album-icons flex center">
           <a href="#">
             <i class="fa-regular fa-heart"></i>
           </a>
@@ -344,15 +352,17 @@
 
       <!-- LEFT-SIDE PLAYER -->
       <div class="player-volume flex center">
-        <a href="#">
-          <i class="fa-solid fa-list"></i>
-        </a>
-        <a href="#">
-          <i class="fa-solid fa-display"></i>
-        </a>
-        <a href="#">
-          <i class="fa-solid fa-volume-high"></i>
-        </a>
+        <div class="volume-icons flex center">
+          <a href="#">
+            <i class="fa-solid fa-list"></i>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-display"></i>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-volume-high"></i>
+          </a>
+        </div>
 
         <div class="volume">
           <div class="volume-total">

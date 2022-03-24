@@ -14,7 +14,7 @@
 
 .upgrade-section > button {
   margin: 15px 30px;
-  padding: 10px 20px;
+  padding: 0 20px;
   border-radius: 20px;
   border: 1px solid white;
   background-color: rgba(0, 0, 0, 0);
@@ -52,6 +52,11 @@
   color: white;
   z-index: 999;
   padding: 10px;
+}
+
+.alternative {
+  padding: 10px 0 0 10px;
+  display: none;
 }
 
 .nav-icons img {
@@ -94,6 +99,7 @@ li.active{
   width: 40px;
   height: 40px;
   background-color: #A3A3A3;
+  border-radius: 3px;
 }
 
 .crea-playlist i {
@@ -217,11 +223,6 @@ nav li {
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -238,7 +239,7 @@ nav li {
 
 .overlay i {
   color: white;
-  font-size: 3vw;
+  font-size: 3em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -270,11 +271,12 @@ nav li {
 }
 
 .album-img {
-  width: 70px;
+  max-width: 70px;
 }
 
 .album-txt {
   padding-left: 10px;
+  width: 100%;
 }
 
 .album-txt p {
@@ -288,8 +290,8 @@ nav li {
 
 .album-icons {
   align-items: center;
-  padding-left: 30px;
-}
+  padding-left: 20px;
+} 
 
 .album-icons i {
   padding-left: 15px;
@@ -302,14 +304,14 @@ nav li {
 }
 
 .player-controller i {
-  padding: 10px 15px;
-  font-size: 1.5rem;
+  padding: 10px 10px;
+  font-size: 1rem;
   color: white;
 }
 
 .player-btn .fa-circle-play{
-  font-size: 2.3rem;
-  margin: 0 10px;
+  font-size: 1.3rem;
+  margin: 0 5px;
 }
 
 .player-btn .fa-circle-play:hover{
@@ -327,7 +329,7 @@ nav li {
 }
 
 .timeframe {
-  min-width: calc(100% - 100px)
+  width: calc(100% - 100px)
 }
 
 .timeframe-total,
@@ -349,7 +351,7 @@ nav li {
   width: 30px
 }
 .player-volume {
-  width: 300px;
+  width: 20%;
   padding-right: 15px;
 }
 
@@ -358,12 +360,111 @@ nav li {
 }
 
 .volume {
-  width: 60%;
+  min-width: 60%;
 }
 
 /* /FOOTER */
 
 /* MEDIA QUERY */
 
-  
+@media screen and (max-width: 1100px){
+  .disc {
+    max-width: calc((100% - 80px) / 4);
+  }
+
+@media screen and (max-width: 770px){
+  .disc {
+    max-width: calc((100% - 40px) / 2);
+  }
+
+  .volume-icons,
+  .album-icons {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .volume-icons i{
+    margin-bottom: 10px;
+  }
+
+  .aside-column {
+    width: 200px;
+  }
+
+  .side-nav img {
+    width: 20%;
+  }
+
+  .central-section {
+    width: calc(100% - 200px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .side-logo {
+    display: none;
+  }
+
+  .alternative {
+    display: block;
+    width: 85%;
+  }
+
+  .aside-column {
+    width: 60px;
+  }
+
+  .side-nav img {
+    width: 80%;
+  }
+
+  #nav-bottom .install,
+  #nav-bottom .profile{
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;
+  }
+
+  .central-section {
+    width: calc(100% - 60px);
+  }
+
+  .nav-icons span,
+  .playlist-section,
+  #nav-bottom p, 
+  #nav-bottom h3{
+    display: none;
+  }
+
+  .main-content ul li a{
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .aside-column {
+    display: none;  
+  }
+
+  .central-section {
+    width: 100%;
+  }
+
+  .disc {
+    max-width: 100%;
+  }
+
+  .upgrade-section {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .upgrade-section button {
+    margin: none;
+    padding: 10px 20px;
+  }
+}
+
+
 /* /MEDIA QUERY */
