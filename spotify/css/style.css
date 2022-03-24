@@ -113,15 +113,22 @@ li.active{
 }
 
 .playlist-section {
-  overflow: auto;
+  height: 100%;
+  overflow: hidden;
 }
 
 .play-list {
-  overflow-y: auto;
-  height: 350px;
+  overflow: auto;
 }
 
-/* TENTATIVO DI OVERFLOW */
+/* ALTERNATIVA PER SCROLLBAR DELLLE PLAYLIST: 
+
+.play-list {
+  height: calc(100% - 110px);
+}
+
+Calcolo dell'altezza della sezine delle playlist sottraendo le altezze di tutti gli elementi sopra alle playlist
+*/
 
 .play-list li {
   margin-bottom: 25px;
