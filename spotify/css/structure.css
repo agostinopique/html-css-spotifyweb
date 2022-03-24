@@ -6,6 +6,7 @@
 .wrap {
   flex-wrap: wrap;
 }
+
 .center {
   justify-content: center;
   align-items: center;
@@ -16,10 +17,13 @@
 }
 
 /* DEBUG */
+
 .debug {
   background-color: rgba(255, 0, 0, 0.5);
   border: 1px solid black;
 }
+
+/* /DEBUG */
 
 .h70 {
   height: 70px;
@@ -44,6 +48,6 @@
   width: 100%;
 }
 
-.p-borders {
+.container-p {
   padding: 20px;
 }
