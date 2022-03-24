@@ -88,7 +88,6 @@
         </a>
       </div>
     </div>
-    <!-- POSIZIONARE IL BORDO VERDE: Modifica il padding spostandolo dal contenitore ai singoli li in modo da poter poi aggiunggere il bordo alla fine della pagina. Inoltre, per risolvere un eventuale slittamento degli li causato dai pixel aggiunti dal bordo colorato, puoi dare a tutti gli li un bordo dello stesso spessore ma trasparente -->
     <!-- /ASIDE COLUMN -->
 
 
@@ -99,8 +98,8 @@
       </div>
 
       <div class="main-content">
-        <nav class="flex center">
-          <ul>
+        <nav>
+          <ul class="flex wrap center">
             <li>
               <a href="#">IN EVIDENZA</a>
               <div class="active-bottom"></div>
@@ -333,8 +332,9 @@
         <div class="track-status flex">
         <p class="track-time">0:25</p>
         <div class="timeframe">
-          <div class="timeframe-total"></div>
-          <div class="timeframe-passed"></div>
+          <div class="timeframe-total">
+            <div class="timeframe-passed"></div>
+          </div>
         </div>
         <p class="track-time">4:35</p>
 
@@ -355,8 +355,9 @@
         </a>
 
         <div class="volume">
-          <div class="volume-total"></div>
-          <div class="volume-passed"></div>
+          <div class="volume-total">
+            <div class="volume-passed"></div>
+          </div>
         </div>
       </div>
       <!-- /LEFT-SIDE PLAYER -->

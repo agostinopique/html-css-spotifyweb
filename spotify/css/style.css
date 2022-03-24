@@ -183,7 +183,7 @@ nav li {
 }
 
 .disc {
-  width: calc((100% - 120px) / 6);
+  max-width: calc((100% - 120px) / 6);
   margin: 10px 20px 0 0;
   flex-shrink: 0;
 }
@@ -327,23 +327,27 @@ nav li {
 }
 
 .timeframe {
-  width: 80%;
+  min-width: calc(100% - 100px)
 }
 
-.timeframe-total {
+.timeframe-total,
+.volume-total {
   width: 100%;
-  border: 2px solid #717171;
+  background-color: #717171;
   border-radius: 5px;
 }
 
-.timeframe-passed {
+.timeframe-passed,
+.volume-passed {
   width: 30%;
   border: 2px solid #C1C1C1;
   border-radius: 5px;
-  position: relative;
-  bottom: 4px;
 }
 
+.track-time {
+  margin: 0 20px;
+  width: 30px
+}
 .player-volume {
   width: 300px;
   padding-right: 15px;
@@ -357,22 +361,9 @@ nav li {
   width: 60%;
 }
 
-.volume-total {
-  width: 100%;
-  border: 2px solid #717171;
-  border-radius: 5px;
-}
-
-.volume-passed {
-  width: 30%;
-  border: 2px solid #C1C1C1;
-  border-radius: 5px;
-  position: relative;
-  bottom: 4px;
-}
-
 /* /FOOTER */
 
 /* MEDIA QUERY */
 
+  
 /* /MEDIA QUERY */
